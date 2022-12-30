@@ -19,5 +19,8 @@ set -x
 # after the last slash in that name.
 cd "${0%/*}"
 
+# if the user asked for a specific extension, use it, otherwise default to html
+EXTENSION="${1:-html}"
+
 # compile our masterpeice to html
-pandoc --standalone --css style.css disaster.md --output Prehistoric_Disaster.html
+pandoc --standalone --css style.css disaster.md --output "Prehistoric_Disaster.${EXTENSION}"
