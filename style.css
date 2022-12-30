@@ -12,6 +12,6 @@ h1,h2,h3 {
 }
 
 tr,td,th {
-	border: 1px solid black;
+	border: 1px solid #444;
 	padding: 4px;
 }
